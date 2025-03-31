@@ -1,0 +1,176 @@
+Command: vcs -full64 -ntb_opts uvm-1.2 -debug_acc+all -l out/log/elab.log -sim_res=10ps \
+-top gon_axi2apb_tb -o out/obj/gon_axi2apb_tb.simv
+Doing common elaboration 
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Sun Mar 30 23:30:32 2025
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Top Level Modules:
+       uvm_custom_install_recording
+       uvm_custom_install_verdi_recording
+       gon_axi2apb_tb
+TimeScale is 1 ns / 10 ps
+
+Warning-[DTIE] Different enum types in equality
+../seq_lib/elem_seqs/gon_axi2apb_write_seq.sv, 38
+gon_axi2apb_pkg, "(this.burst_size == BURST_SIZE_32BIT)"
+  Enum values 'this.burst_size' and 'BURST_SIZE_32BIT' of different enum types
+  are used together with equality operator '=='.
+  LHS type: enum 'burst_size_e' defined in scope 'gon_axi_pkg' at 
+  "../vip_lib/gon_axi/././common/gon_axi_types.sv", 20
+  RHS type: enum 'burst_size_enum' defined in scope 'gon_apb_pkg' at 
+  "../vip_lib/gon_apb/./gon_apb_types.sv", 20
+
+
+Warning-[DTIE] Different enum types in equality
+../seq_lib/elem_seqs/gon_axi2apb_read_seq.sv, 38
+gon_axi2apb_pkg, "(this.burst_size == BURST_SIZE_32BIT)"
+  Enum values 'this.burst_size' and 'BURST_SIZE_32BIT' of different enum types
+  are used together with equality operator '=='.
+  LHS type: enum 'burst_size_e' defined in scope 'gon_axi_pkg' at 
+  "../vip_lib/gon_axi/././common/gon_axi_types.sv", 20
+  RHS type: enum 'burst_size_enum' defined in scope 'gon_apb_pkg' at 
+  "../vip_lib/gon_apb/./gon_apb_types.sv", 20
+
+
+Warning-[ENUMASSIGN] Illegal assignment to enum variable
+../vip_lib/gon_axi/././gon_axi_master/gon_axi_master_monitor.sv, 86
+gon_axi_pkg, "this.wr_t.resp[0] = this.vif.mon_cb.AXI_BRESP;"
+  Only expressions of the enum type can be assigned to an enum variable. 
+  The type logic [1:0] is incompatible with the enum 'resp_e'
+  Expression: this.vif.mon_cb.AXI_BRESP
+  Use the static cast operator to convert the expression to enum type.
+
+
+Warning-[ENUMASSIGN] Illegal assignment to enum variable
+../vip_lib/gon_axi/././gon_axi_master/gon_axi_master_monitor.sv, 116
+gon_axi_pkg, "this.rd_t.resp[this.rd_cnt] = this.vif.mon_cb.AXI_RRESP;"
+  Only expressions of the enum type can be assigned to an enum variable. 
+  The type logic [1:0] is incompatible with the enum 'resp_e'
+  Expression: this.vif.mon_cb.AXI_RRESP
+  Use the static cast operator to convert the expression to enum type.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../tb/gon_axi2apb_tb.sv, 30
+"DW_axi_x2p dut( .aclk (gon_axi2apb_tb.axi_clk_reset_if.clk),  .aresetn (gon_axi2apb_tb.axi_clk_reset_if.reset_),  .awid (gon_axi2apb_tb.axi_if[0].AXI_AWID),  .awaddr (gon_axi2apb_tb.axi_if[0].AXI_AWADDR),  .awlen (gon_axi2apb_tb.axi_if[0].AXI_AWLEN),  .awsize (gon_axi2apb_tb.axi_if[0].AXI_AWSIZE),  .awburst (gon_axi2apb_tb.axi_if[0].AXI_AWBURST),  .awlock (gon_axi2apb_tb.axi_if[0].AXI_AWLOCK),  .awcache (gon_axi2apb_tb.axi_if[0].AXI_AWCACHE),  .awprot (gon_axi2apb_tb.axi_if[0].AXI_AWPROT),  .awvalid (gon_axi2apb_tb.axi_if[0].AXI_AWVALID),  .awready (gon_axi2apb_tb.axi_if[0].AXI_AWREADY),  .wid (gon_axi2apb_tb.axi_if[0].AXI_WID),  .wdata (gon_axi2apb_tb.axi_if[0].AXI_WDATA),  .wstrb (gon_axi2apb_tb.axi_if[0].AXI_WSTRB),  .wlast (gon_axi2apb_tb.axi_if[0]. ... "
+  The following 1-bit expression is connected to 8-bit port "awid" of module 
+  "DW_axi_x2p", instance "dut".
+  Expression: gon_axi2apb_tb.axi_if[0].AXI_AWID
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../tb/gon_axi2apb_tb.sv, 30
+"DW_axi_x2p dut( .aclk (gon_axi2apb_tb.axi_clk_reset_if.clk),  .aresetn (gon_axi2apb_tb.axi_clk_reset_if.reset_),  .awid (gon_axi2apb_tb.axi_if[0].AXI_AWID),  .awaddr (gon_axi2apb_tb.axi_if[0].AXI_AWADDR),  .awlen (gon_axi2apb_tb.axi_if[0].AXI_AWLEN),  .awsize (gon_axi2apb_tb.axi_if[0].AXI_AWSIZE),  .awburst (gon_axi2apb_tb.axi_if[0].AXI_AWBURST),  .awlock (gon_axi2apb_tb.axi_if[0].AXI_AWLOCK),  .awcache (gon_axi2apb_tb.axi_if[0].AXI_AWCACHE),  .awprot (gon_axi2apb_tb.axi_if[0].AXI_AWPROT),  .awvalid (gon_axi2apb_tb.axi_if[0].AXI_AWVALID),  .awready (gon_axi2apb_tb.axi_if[0].AXI_AWREADY),  .wid (gon_axi2apb_tb.axi_if[0].AXI_WID),  .wdata (gon_axi2apb_tb.axi_if[0].AXI_WDATA),  .wstrb (gon_axi2apb_tb.axi_if[0].AXI_WSTRB),  .wlast (gon_axi2apb_tb.axi_if[0]. ... "
+  The following 1-bit expression is connected to 8-bit port "wid" of module 
+  "DW_axi_x2p", instance "dut".
+  Expression: gon_axi2apb_tb.axi_if[0].AXI_WID
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../tb/gon_axi2apb_tb.sv, 30
+"DW_axi_x2p dut( .aclk (gon_axi2apb_tb.axi_clk_reset_if.clk),  .aresetn (gon_axi2apb_tb.axi_clk_reset_if.reset_),  .awid (gon_axi2apb_tb.axi_if[0].AXI_AWID),  .awaddr (gon_axi2apb_tb.axi_if[0].AXI_AWADDR),  .awlen (gon_axi2apb_tb.axi_if[0].AXI_AWLEN),  .awsize (gon_axi2apb_tb.axi_if[0].AXI_AWSIZE),  .awburst (gon_axi2apb_tb.axi_if[0].AXI_AWBURST),  .awlock (gon_axi2apb_tb.axi_if[0].AXI_AWLOCK),  .awcache (gon_axi2apb_tb.axi_if[0].AXI_AWCACHE),  .awprot (gon_axi2apb_tb.axi_if[0].AXI_AWPROT),  .awvalid (gon_axi2apb_tb.axi_if[0].AXI_AWVALID),  .awready (gon_axi2apb_tb.axi_if[0].AXI_AWREADY),  .wid (gon_axi2apb_tb.axi_if[0].AXI_WID),  .wdata (gon_axi2apb_tb.axi_if[0].AXI_WDATA),  .wstrb (gon_axi2apb_tb.axi_if[0].AXI_WSTRB),  .wlast (gon_axi2apb_tb.axi_if[0]. ... "
+  The following 64-bit expression is connected to 32-bit port "wdata" of 
+  module "DW_axi_x2p", instance "dut".
+  Expression: gon_axi2apb_tb.axi_if[0].AXI_WDATA
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../tb/gon_axi2apb_tb.sv, 30
+"DW_axi_x2p dut( .aclk (gon_axi2apb_tb.axi_clk_reset_if.clk),  .aresetn (gon_axi2apb_tb.axi_clk_reset_if.reset_),  .awid (gon_axi2apb_tb.axi_if[0].AXI_AWID),  .awaddr (gon_axi2apb_tb.axi_if[0].AXI_AWADDR),  .awlen (gon_axi2apb_tb.axi_if[0].AXI_AWLEN),  .awsize (gon_axi2apb_tb.axi_if[0].AXI_AWSIZE),  .awburst (gon_axi2apb_tb.axi_if[0].AXI_AWBURST),  .awlock (gon_axi2apb_tb.axi_if[0].AXI_AWLOCK),  .awcache (gon_axi2apb_tb.axi_if[0].AXI_AWCACHE),  .awprot (gon_axi2apb_tb.axi_if[0].AXI_AWPROT),  .awvalid (gon_axi2apb_tb.axi_if[0].AXI_AWVALID),  .awready (gon_axi2apb_tb.axi_if[0].AXI_AWREADY),  .wid (gon_axi2apb_tb.axi_if[0].AXI_WID),  .wdata (gon_axi2apb_tb.axi_if[0].AXI_WDATA),  .wstrb (gon_axi2apb_tb.axi_if[0].AXI_WSTRB),  .wlast (gon_axi2apb_tb.axi_if[0]. ... "
+  The following 8-bit expression is connected to 4-bit port "wstrb" of module 
+  "DW_axi_x2p", instance "dut".
+  Expression: gon_axi2apb_tb.axi_if[0].AXI_WSTRB
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../tb/gon_axi2apb_tb.sv, 30
+"DW_axi_x2p dut( .aclk (gon_axi2apb_tb.axi_clk_reset_if.clk),  .aresetn (gon_axi2apb_tb.axi_clk_reset_if.reset_),  .awid (gon_axi2apb_tb.axi_if[0].AXI_AWID),  .awaddr (gon_axi2apb_tb.axi_if[0].AXI_AWADDR),  .awlen (gon_axi2apb_tb.axi_if[0].AXI_AWLEN),  .awsize (gon_axi2apb_tb.axi_if[0].AXI_AWSIZE),  .awburst (gon_axi2apb_tb.axi_if[0].AXI_AWBURST),  .awlock (gon_axi2apb_tb.axi_if[0].AXI_AWLOCK),  .awcache (gon_axi2apb_tb.axi_if[0].AXI_AWCACHE),  .awprot (gon_axi2apb_tb.axi_if[0].AXI_AWPROT),  .awvalid (gon_axi2apb_tb.axi_if[0].AXI_AWVALID),  .awready (gon_axi2apb_tb.axi_if[0].AXI_AWREADY),  .wid (gon_axi2apb_tb.axi_if[0].AXI_WID),  .wdata (gon_axi2apb_tb.axi_if[0].AXI_WDATA),  .wstrb (gon_axi2apb_tb.axi_if[0].AXI_WSTRB),  .wlast (gon_axi2apb_tb.axi_if[0]. ... "
+  The following 1-bit expression is connected to 8-bit port "bid" of module 
+  "DW_axi_x2p", instance "dut".
+  Expression: gon_axi2apb_tb.axi_if[0].AXI_BID
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../tb/gon_axi2apb_tb.sv, 30
+"DW_axi_x2p dut( .aclk (gon_axi2apb_tb.axi_clk_reset_if.clk),  .aresetn (gon_axi2apb_tb.axi_clk_reset_if.reset_),  .awid (gon_axi2apb_tb.axi_if[0].AXI_AWID),  .awaddr (gon_axi2apb_tb.axi_if[0].AXI_AWADDR),  .awlen (gon_axi2apb_tb.axi_if[0].AXI_AWLEN),  .awsize (gon_axi2apb_tb.axi_if[0].AXI_AWSIZE),  .awburst (gon_axi2apb_tb.axi_if[0].AXI_AWBURST),  .awlock (gon_axi2apb_tb.axi_if[0].AXI_AWLOCK),  .awcache (gon_axi2apb_tb.axi_if[0].AXI_AWCACHE),  .awprot (gon_axi2apb_tb.axi_if[0].AXI_AWPROT),  .awvalid (gon_axi2apb_tb.axi_if[0].AXI_AWVALID),  .awready (gon_axi2apb_tb.axi_if[0].AXI_AWREADY),  .wid (gon_axi2apb_tb.axi_if[0].AXI_WID),  .wdata (gon_axi2apb_tb.axi_if[0].AXI_WDATA),  .wstrb (gon_axi2apb_tb.axi_if[0].AXI_WSTRB),  .wlast (gon_axi2apb_tb.axi_if[0]. ... "
+  The following 1-bit expression is connected to 8-bit port "arid" of module 
+  "DW_axi_x2p", instance "dut".
+  Expression: gon_axi2apb_tb.axi_if[0].AXI_ARID
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../tb/gon_axi2apb_tb.sv, 30
+"DW_axi_x2p dut( .aclk (gon_axi2apb_tb.axi_clk_reset_if.clk),  .aresetn (gon_axi2apb_tb.axi_clk_reset_if.reset_),  .awid (gon_axi2apb_tb.axi_if[0].AXI_AWID),  .awaddr (gon_axi2apb_tb.axi_if[0].AXI_AWADDR),  .awlen (gon_axi2apb_tb.axi_if[0].AXI_AWLEN),  .awsize (gon_axi2apb_tb.axi_if[0].AXI_AWSIZE),  .awburst (gon_axi2apb_tb.axi_if[0].AXI_AWBURST),  .awlock (gon_axi2apb_tb.axi_if[0].AXI_AWLOCK),  .awcache (gon_axi2apb_tb.axi_if[0].AXI_AWCACHE),  .awprot (gon_axi2apb_tb.axi_if[0].AXI_AWPROT),  .awvalid (gon_axi2apb_tb.axi_if[0].AXI_AWVALID),  .awready (gon_axi2apb_tb.axi_if[0].AXI_AWREADY),  .wid (gon_axi2apb_tb.axi_if[0].AXI_WID),  .wdata (gon_axi2apb_tb.axi_if[0].AXI_WDATA),  .wstrb (gon_axi2apb_tb.axi_if[0].AXI_WSTRB),  .wlast (gon_axi2apb_tb.axi_if[0]. ... "
+  The following 1-bit expression is connected to 8-bit port "rid" of module 
+  "DW_axi_x2p", instance "dut".
+  Expression: gon_axi2apb_tb.axi_if[0].AXI_RID
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../tb/gon_axi2apb_tb.sv, 30
+"DW_axi_x2p dut( .aclk (gon_axi2apb_tb.axi_clk_reset_if.clk),  .aresetn (gon_axi2apb_tb.axi_clk_reset_if.reset_),  .awid (gon_axi2apb_tb.axi_if[0].AXI_AWID),  .awaddr (gon_axi2apb_tb.axi_if[0].AXI_AWADDR),  .awlen (gon_axi2apb_tb.axi_if[0].AXI_AWLEN),  .awsize (gon_axi2apb_tb.axi_if[0].AXI_AWSIZE),  .awburst (gon_axi2apb_tb.axi_if[0].AXI_AWBURST),  .awlock (gon_axi2apb_tb.axi_if[0].AXI_AWLOCK),  .awcache (gon_axi2apb_tb.axi_if[0].AXI_AWCACHE),  .awprot (gon_axi2apb_tb.axi_if[0].AXI_AWPROT),  .awvalid (gon_axi2apb_tb.axi_if[0].AXI_AWVALID),  .awready (gon_axi2apb_tb.axi_if[0].AXI_AWREADY),  .wid (gon_axi2apb_tb.axi_if[0].AXI_WID),  .wdata (gon_axi2apb_tb.axi_if[0].AXI_WDATA),  .wstrb (gon_axi2apb_tb.axi_if[0].AXI_WSTRB),  .wlast (gon_axi2apb_tb.axi_if[0]. ... "
+  The following 64-bit expression is connected to 32-bit port "rdata" of 
+  module "DW_axi_x2p", instance "dut".
+  Expression: gon_axi2apb_tb.axi_if[0].AXI_RDATA
+  	use +lint=PCWM for more details
+
+
+Warning-[DRTZ] Detect delay value roundoff to 0
+  Delay from design or SDF file roundoff to 0 based on timescale
+  Please use switch -diag timescale to dump detailed information.
+
+Starting vcs inline pass...
+22 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling package uvm_pkg
+recompiling package _vcs_msglog
+recompiling module uvm_custom_install_recording
+recompiling package _vcs_DPI_package
+recompiling module uvm_custom_install_verdi_recording
+recompiling package gon_apb_pkg
+recompiling package gon_axi_pkg
+recompiling package gon_clk_reset_pkg
+recompiling package gon_axi2apb_pkg
+recompiling module gon_axi2apb_tb
+recompiling module gon_apb_if
+recompiling module gon_axi_master_if
+recompiling module gon_clk_reset_if
+recompiling module DW_axi_x2p
+recompiling module DW_axi_x2p_mux
+recompiling module DW_axi_x2p_p
+recompiling module DW_axi_x2p_arb
+recompiling module DW_axi_x2p_bcm07
+recompiling module DW_axi_x2p_write_data_buffer
+recompiling module DW_axi_x2p_resp_buffer
+recompiling module DW_axi_x2p_read_data_buffer
+All of 22 modules done
+make[1]: Entering directory '/home/ICer/ic_prjs/AXI2APB/sim/csrc'
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../out/obj/gon_axi2apb_tb.simv ]; then chmod -x ../out/obj/gon_axi2apb_tb.simv; \
+fi
+g++  -o ../out/obj/gon_axi2apb_tb.simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/gon_axi2apb_tb.simv.daidir/ \
+-Wl,-rpath=./gon_axi2apb_tb.simv.daidir/ -Wl,-rpath='$ORIGIN'/gon_axi2apb_tb.simv.daidir//scsim.db.dir \
+-rdynamic -Wl,-rpath=/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib -L/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib \
+uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o   _31311_archive_1.so  SIM_l.o      rmapats_mop.o \
+rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lzerosoft_rt_stubs \
+-lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -lvirsim -luclinative /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive       ./../out/obj/gon_axi2apb_tb.simv.daidir/vc_hdrs.o \
+_vcs_pli_stub_.o   /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_save_restore_new.o \
+/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm \
+-lpthread -ldl 
+../out/obj/gon_axi2apb_tb.simv up to date
+make[1]: Leaving directory '/home/ICer/ic_prjs/AXI2APB/sim/csrc'
+CPU time: 18.311 seconds to compile + .477 seconds to elab + .737 seconds to link

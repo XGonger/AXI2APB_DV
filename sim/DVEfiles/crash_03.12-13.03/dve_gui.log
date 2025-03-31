@@ -1,0 +1,92 @@
+
+Warning-[RT_SMLWITHGUI] Smartlog with -gui
+  The '-sml' flag is ignored; Smartlog is always enabled with '-gui'.
+  The Smartlog is stored at DVEfiles/dve_gui.log.
+
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP2_Full64; Runtime version O-2018.09-SP2_Full64;  Mar 12 13:02 2025
+UVM_INFO /opt/synopsys/vcs/vcs-mx/O-2018.09-SP2/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+VCD+ Writer O-2018.09-SP2_Full64 Copyright (c) 1991-2018 by Synopsys Inc.
+The design has assertions or cover properties.
+The assertion browser can be used to view them. Click on the assertion toolbar button or use the menu 'Window->Panes->Assertion' to open it.
+The file '/home/icstudy/Desktop/axi2apb_03_12/sim/inter.vpd' was opened successfully.
+GUI mode
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 00 ps
+CPU Time:      0.420 seconds;       Data structure size:   8.6Mb
+Wed Mar 12 13:02:31 2025
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP2_Full64; Runtime version O-2018.09-SP2_Full64;  Mar 12 13:02 2025
+UVM_INFO /opt/synopsys/vcs/vcs-mx/O-2018.09-SP2/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+VCD+ Writer O-2018.09-SP2_Full64 Copyright (c) 1991-2018 by Synopsys Inc.
+The design has assertions or cover properties.
+The assertion browser can be used to view them. Click on the assertion toolbar button or use the menu 'Window->Panes->Assertion' to open it.
+The file '/home/icstudy/Desktop/axi2apb_03_12/sim/inter.vpd' was opened successfully.
+Information: *** Instance gon_axi2apb_tb.dut.U_WR_DATA_BUFF.U_WRITE_FIFO_CONTROL_S2 module is using the <Dual Clock FIFO Controller (11)> Clock Domain Crossing Method ***
+Information: *** Instance gon_axi2apb_tb.dut.U_RESP_BUFF.U_RESP_FIFO_CONTROL_S2 module is using the <Dual Clock FIFO Controller (11)> Clock Domain Crossing Method ***
+Information: *** Instance gon_axi2apb_tb.dut.U_RD_DATA_BUFF.U_READ_FIFO_CONTROL_S2 module is using the <Dual Clock FIFO Controller (11)> Clock Domain Crossing Method ***
+Information: *** Instance gon_axi2apb_tb.dut.U_CMD_QUEUE.U_CMD_FIFO_CONTROL_S2 module is using the <Dual Clock FIFO Controller (11)> Clock Domain Crossing Method ***
+UVM_INFO @ 0: reporter [RNTST] Running test gon_axi2apb_smoke_test...
+UVM_INFO /opt/synopsys/vcs/vcs-mx/O-2018.09-SP2/etc/uvm-1.2/base/uvm_phase.svh(1797) @ 0: reporter [PH/TRC/WAIT_PRED_OF_SUCC] Phase 'common.build' (id=195) *** No pred to succ other than myself, so ending phase ***
+UVM_INFO /opt/synopsys/vcs/vcs-mx/O-2018.09-SP2/etc/uvm-1.2/base/uvm_phase.svh(1797) @ 0: reporter [PH/TRC/WAIT_PRED_OF_SUCC] Phase 'common.connect' (id=198) *** No pred to succ other than myself, so ending phase ***
+UVM_INFO /opt/synopsys/vcs/vcs-mx/O-2018.09-SP2/etc/uvm-1.2/base/uvm_phase.svh(1797) @ 0: reporter [PH/TRC/WAIT_PRED_OF_SUCC] Phase 'common.end_of_elaboration' (id=201) *** No pred to succ other than myself, so ending phase ***
+UVM_INFO /opt/synopsys/vcs/vcs-mx/O-2018.09-SP2/etc/uvm-1.2/base/uvm_phase.svh(1797) @ 0: reporter [PH/TRC/WAIT_PRED_OF_SUCC] Phase 'common.start_of_simulation' (id=204) *** No pred to succ other than myself, so ending phase ***
+UVM_INFO ../vip_lib/gon_apb/./gon_apb_slave_driver.sv(98) @ 0: uvm_test_top.env.apb_slv.driver [gon_apb_slave_driver] reset_listener ...
+UVM_INFO ../vip_lib/gon_axi/././gon_axi_master/gon_axi_master_driver.sv(178) @ 0: uvm_test_top.env.axi_mst.driver [gon_axi_master_driver] reset_listener ...
+---------------------------------------------
+
+Simulation has just terminated due to a severe internal error:
+
+
+Release = 'O-2018.09-SP2_Full64'  Architecture = 'linux64'  Program = 'DVE'
+
+'34147489 34183471 32623966 32633579 32516717 32517118 32413780 32458736 32462046 41396456 43276127 43281794 43282639 43285843 43310622 43281794 43431945 43450982 43598992 43281794 43285451 43285806 43600519 43281794 43431945 43450982 43285892 43311899 43281794 43431945 43450982 43598992 43281794 43285451 43531753 43281794 43431945 43450982 43598992 43281794 43285451 43285806 43600519 43281794 43431945 43450982 43285892 43311899 43281794 43431945 43450982 43598992 43281794 43285451 43531753 43281794 43282639 41393724 36887497 36864128 36902232 36894430 36895057 34197166 34706958 37152541 37346756 37347408 37653330 44488602 44488850 44667055 44170741 44171686 34661378 34464339 43869505 43863680 43922034 18480790 44238697 44238570 18479284 18207262 14523285 140737292825941'
+
+---------------------------------------------
+===============================DVE Context================================
+Command line: /opt/synopsys/vcs/vcs-mx/O-2018.09-SP2/gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe out/obj/gon_axi2apb_tb.simv -a run.log +ntb_random_seed=1 +UVM_TESTNAME=gon_axi2apb_smoke_test +UVM_VERBOSITY=UVM_HIGH -cm_dir out/cov.vdb -cm_name gon_axi2apb_smoke_test_1 -do gon_axi2apb_sim_run.do  -pid 5299" -toolin /tmp/vcs_20250312050209_5295_icstudy..stdin -toolout /tmp/vcs_20250312050209_5295_icstudy..stdout
+==========================================================================

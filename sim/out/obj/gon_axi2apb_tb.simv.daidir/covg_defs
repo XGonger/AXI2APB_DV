@@ -1,0 +1,308 @@
+global coverage_group 0 gon_axi2apb_pkg::gon_axi2apb_cgm::gon_axi2apb_t1_address_cg __coverage_gon_axi2apb_cgm.gon_axi2apb_t1_address_cg unused_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_loop_label gon_axi2apb_pkg 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 56 /home/ICer/ic_prjs/AXI2APB/sim/../cov/gon_axi2apb_cgm.sv
+ 10 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_6
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+0
+0
+ 7 WR_ADDR 12 0 0 0 0 77 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn 77 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn 0 0 0 0 0 0 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 10 addr_start 13 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 addr_end 14 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_2 0 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_3 0 0 0 0 0
+ 1 1 1 0 1 1 11 legal_range 15 0 0 1 0 0 0 0 0 0 0 0 0 0 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_4 0 -1 0 0 -1 0 0 1 1 1 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_1 0 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_3 0 0 0 0 0
+
+ 7 RD_ADDR 17 0 0 0 0 77 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn 77 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn 0 0 0 0 0 0 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_5 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 10 addr_start 18 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 addr_end 19 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_2 0 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_3 0 0 0 0 0
+ 1 1 1 0 1 1 11 legal_range 20 0 0 1 0 0 0 0 0 0 0 0 0 0 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_4 0 -1 0 0 -1 0 0 1 1 1 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_1 0 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t1_address_cg_fn_3 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 gon_axi2apb_pkg::gon_axi2apb_cgm::gon_axi2apb_t2_length_cg __coverage_gon_axi2apb_cgm.gon_axi2apb_t2_length_cg unused_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_loop_label gon_axi2apb_pkg 0 1 0 0 0  ( 0 
+)
+ 0 25 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_12
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+0
+0
+ 6 WR_LEN 27 0 0 0 0 76 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn 76 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn 0 0 0 0 0 0 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_0 0 0 0 -1 0 0 -1 0 0 0 7 4 1 27 gon_axi_pkg::burst_length_e 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 16 1 1 0 0 1 1 9 length_01 28 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_02 29 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_2 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_03 30 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_3 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_04 31 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_4 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_05 32 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_5 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_06 33 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_6 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_07 34 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_7 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_08 35 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_8 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_09 36 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_9 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_10 37 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_a 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_11 38 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_b 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_12 39 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_c 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_13 40 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_d 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_14 41 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_e 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_15 42 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_f 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_16 43 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_10 0 0 0 0 0 0 0
+
+ 6 RD_LEN 45 0 0 0 0 76 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn 76 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn 0 0 0 0 0 0 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_11 0 0 0 -1 0 0 -1 0 0 0 7 4 1 27 gon_axi_pkg::burst_length_e 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 16 1 1 0 0 1 1 9 length_01 46 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_02 47 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_2 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_03 48 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_3 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_04 49 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_4 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_05 50 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_5 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_06 51 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_6 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_07 52 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_7 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_08 53 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_8 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_09 54 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_9 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_10 55 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_a 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_11 56 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_b 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_12 57 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_c 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_13 58 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_d 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_14 59 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_e 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_15 60 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 78 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_f 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 length_16 61 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t2_length_cg_fn_10 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 gon_axi2apb_pkg::gon_axi2apb_cgm::gon_axi2apb_t3_type_cg __coverage_gon_axi2apb_cgm.gon_axi2apb_t3_type_cg unused_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_loop_label gon_axi2apb_pkg 0 1 0 0 0  ( 0 
+)
+ 0 66 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 76 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_fn_5
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+0
+0
+ 7 WR_TYPE 68 0 0 0 0 74 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_fn 74 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_fn 0 0 0 0 0 0 76 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_fn_0 0 0 0 -1 0 0 -1 0 0 0 7 2 1 25 gon_axi_pkg::burst_type_e 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 5 fixed 69 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 76 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 4 incr 70 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 76 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_fn_2 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 4 wrap 71 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 76 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_fn_3 0 0 0 0 0 0 0
+
+ 7 RD_TYPE 73 0 0 0 0 74 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_fn 74 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_fn 0 0 0 0 0 0 76 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_fn_4 0 0 0 -1 0 0 -1 0 0 0 7 2 1 25 gon_axi_pkg::burst_type_e 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 5 fixed 74 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 76 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 4 incr 75 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 76 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_fn_2 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 4 wrap 76 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 76 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t3_type_cg_fn_3 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 gon_axi2apb_pkg::gon_axi2apb_cgm::gon_axi2apb_t4_strob_cg __coverage_gon_axi2apb_cgm.gon_axi2apb_t4_strob_cg unused_gon_axi2apb_cgm_gon_axi2apb_t4_strob_cg_loop_label gon_axi2apb_pkg 0 1 0 0 0  ( 0 
+)
+ 0 81 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 77 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t4_strob_cg_fn_2
+ 0
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 5 STROB 83 0 0 0 0 75 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t4_strob_cg_fn 75 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t4_strob_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 8 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 6 all_on 84 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 77 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t4_strob_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 7 all_off 85 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 77 gon_axi2apb_cgm::gon_axi2apb_pkg_gon_axi2apb_cgm_gon_axi2apb_t4_strob_cg_fn_1 0 0 0 0 0 0 0
+
+end_coverage_group

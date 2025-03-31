@@ -1,0 +1,41 @@
+# Preference setting overrides
+gui_set_pref_value -category {Globals} -key {app_default_font} -value {Courier 10 Pitch,14,-1,5,75,0,0,0,0,0}
+gui_set_pref_value -category {Globals} -key {app_fixed_width_font} -value {Courier 10 Pitch,15,-1,5,75,0,0,0,0,0}
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {dlg_settings}
+gui_create_pref_key -category {dlg_settings} -key {tableWithImmediatePopup} -value_type {bool} -value {true}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Layout -key child_console_size_x -value 2557
+gui_set_state_value -category Layout -key child_console_size_y -value 179
+gui_set_state_value -category Layout -key child_data_size_x -value 174
+gui_set_state_value -category Layout -key child_data_size_y -value 816
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 216
+gui_set_state_value -category Layout -key child_hier_size_y -value 816
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-22}
+gui_set_state_value -category Layout -key child_source_size_x -value 2170
+gui_set_state_value -category Layout -key child_source_size_y -value 812
+gui_set_state_value -category Layout -key main_pos_y -value 65
+gui_set_state_value -category Layout -key main_size_x -value 2562
+gui_set_state_value -category Layout -key main_size_y -value 1161
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_set_pref_value -category {Globals} -key {smart_resize} -value {false}
+gui_set_pref_value -category {Globals} -key {smart_resize} -value {true}
+gui_sim_run Ucli -exe out/obj/gon_axi2apb_tb.simv -args {-ucligui  -a run.log +ntb_random_seed=1 +UVM_TESTNAME=gon_axi2apb_smoke_test +UVM_VERBOSITY=UVM_HIGH -cm_dir out/cov.vdb -cm_name gon_axi2apb_smoke_test_1 -do gon_axi2apb_sim_run.do} -dir out/obj
+set DIALOGS::LOADFILEDIR [file dirname /home/ICer/ic_prjs/AXI2APB/sim/gon_axi2apb_debug_wave.tcl]; gui_load_session -ignore_errors -file /home/ICer/ic_prjs/AXI2APB/sim/gon_axi2apb_debug_wave.tcl
+gui_set_pref_value -category {Globals} -key {app_default_font} -value {Liberation Sans Narrow,14,-1,5,50,0,0,0,0,0}
+gui_wv_zoom_timerange -id  Wave.1 0 100500
+gui_wv_zoom_timerange -id  Wave.1 0 100500
+run
+gui_zoom -window Wave.1 -full
+gui_close_window -window TopLevel.1

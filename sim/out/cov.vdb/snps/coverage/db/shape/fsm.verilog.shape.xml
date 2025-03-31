@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<!DOCTYPE cov SYSTEM "ucdb_fsm.dtd">
+  <fsm count="0"  noconst="0"  >
+    <ucapi_version  major_ver="13"  minor_ver="1"  patch_str="O-2018.09-SP2"  />
+      <fsmdef file="222"  name="DW_axi_x2p_arb"  lib=""  parameterized="1"  >
+        <fsmshape >
+          <fsmfsm name="arb_state"  id="0"  width="3"  line="179"  chksum="1256840838"  >
+            <state name="IDLE"  value="parameterized"  id="0"  flag="L"  line="179"  />
+            <state name="RREADY"  value="parameterized"  id="1"  flag="L"  line="130"  />
+            <state name="RREADY_PEND"  value="parameterized"  id="2"  flag="L"  line="144"  />
+            <state name="WREADY"  value="parameterized"  id="3"  flag="L"  line="127"  />
+
+            <transition fromid="0"  toid="1"  flag="L"  line="130"  />
+            <transition fromid="0"  toid="3"  flag="L"  line="127"  />
+            
+            <transition fromid="1"  toid="0"  flag="L"  line="179"  />
+            <transition fromid="1"  toid="3"  flag="L"  line="154"  />
+            
+            <transition fromid="2"  toid="0"  flag="L"  line="179"  />
+            <transition fromid="2"  toid="1"  flag="L"  line="161"  />
+            
+            <transition fromid="3"  toid="0"  flag="L"  line="179"  />
+            <transition fromid="3"  toid="1"  flag="L"  line="142"  />
+            <transition fromid="3"  toid="2"  flag="L"  line="144"  />
+            
+          </fsmfsm>
+        </fsmshape>
+        <fsminst name="gon_axi2apb_tb.dut.U_X2H_ARB"  />
+      </fsmdef>
+      <fsmdef file="233"  name="DW_axi_x2p_s_control"  lib=""  parameterized="1"  >
+        <fsmshape >
+          <fsmfsm name="state"  id="0"  width="6"  line="1093"  chksum="563242485"  >
+            <state name="IDLE"  value="parameterized"  id="0"  flag="L"  line="1093"  />
+            <state name="NREN"  value="parameterized"  id="1"  flag="L"  line="290"  />
+            <state name="NWEN"  value="parameterized"  id="2"  flag="L"  line="282"  />
+            <state name="NWSEL"  value="parameterized"  id="3"  flag="L"  line="592"  />
+            <state name="PREPURGE"  value="parameterized"  id="4"  flag="L"  line="486"  />
+            <state name="PURGE"  value="parameterized"  id="5"  flag="L"  line="294"  />
+            <state name="RBUFWT"  value="parameterized"  id="6"  flag="L"  line="478"  />
+            <state name="REN"  value="parameterized"  id="7"  flag="L"  line="456"  />
+            <state name="RSEL"  value="parameterized"  id="8"  flag="L"  line="469"  />
+            <state name="WDTWT"  value="parameterized"  id="9"  flag="L"  line="591"  />
+            <state name="WEN"  value="parameterized"  id="10"  flag="L"  line="330"  />
+            <state name="WRESP"  value="parameterized"  id="11"  flag="L"  line="303"  />
+            <state name="WSEL"  value="parameterized"  id="12"  flag="L"  line="343"  />
+            <state name="WTSTART"  value="parameterized"  id="13"  flag="L"  line="285"  />
+
+            <transition fromid="0"  toid="1"  flag="L"  line="290"  />
+            <transition fromid="0"  toid="2"  flag="L"  line="282"  />
+            <transition fromid="0"  toid="3"  flag="L"  line="592"  />
+            <transition fromid="0"  toid="5"  flag="L"  line="294"  />
+            <transition fromid="0"  toid="9"  flag="L"  line="591"  />
+            <transition fromid="0"  toid="11"  flag="L"  line="586"  />
+            <transition fromid="0"  toid="12"  flag="L"  line="578"  />
+            <transition fromid="0"  toid="13"  flag="L"  line="285"  />
+            
+            <transition fromid="1"  toid="0"  flag="L"  line="1093"  />
+            <transition fromid="1"  toid="3"  flag="L"  line="592"  />
+            <transition fromid="1"  toid="4"  flag="L"  line="519"  />
+            <transition fromid="1"  toid="5"  flag="L"  line="621"  />
+            <transition fromid="1"  toid="6"  flag="L"  line="510"  />
+            <transition fromid="1"  toid="8"  flag="L"  line="501"  />
+            <transition fromid="1"  toid="9"  flag="L"  line="591"  />
+            <transition fromid="1"  toid="11"  flag="L"  line="586"  />
+            <transition fromid="1"  toid="12"  flag="L"  line="578"  />
+            
+            <transition fromid="2"  toid="0"  flag="L"  line="1093"  />
+            <transition fromid="2"  toid="3"  flag="L"  line="592"  />
+            <transition fromid="2"  toid="5"  flag="L"  line="621"  />
+            <transition fromid="2"  toid="9"  flag="L"  line="591"  />
+            <transition fromid="2"  toid="11"  flag="L"  line="586"  />
+            <transition fromid="2"  toid="12"  flag="L"  line="578"  />
+            
+            <transition fromid="3"  toid="0"  flag="L"  line="1093"  />
+            <transition fromid="3"  toid="2"  flag="L"  line="446"  />
+            <transition fromid="3"  toid="5"  flag="L"  line="621"  />
+            <transition fromid="3"  toid="9"  flag="L"  line="591"  />
+            <transition fromid="3"  toid="11"  flag="L"  line="586"  />
+            <transition fromid="3"  toid="12"  flag="L"  line="578"  />
+            
+            <transition fromid="4"  toid="0"  flag="L"  line="1093"  />
+            <transition fromid="4"  toid="3"  flag="L"  line="592"  />
+            <transition fromid="4"  toid="5"  flag="L"  line="621"  />
+            <transition fromid="4"  toid="9"  flag="L"  line="591"  />
+            <transition fromid="4"  toid="11"  flag="L"  line="586"  />
+            <transition fromid="4"  toid="12"  flag="L"  line="578"  />
+            
+            <transition fromid="5"  toid="0"  flag="L"  line="1093"  />
+            <transition fromid="5"  toid="3"  flag="L"  line="592"  />
+            <transition fromid="5"  toid="9"  flag="L"  line="591"  />
+            <transition fromid="5"  toid="11"  flag="L"  line="303"  />
+            <transition fromid="5"  toid="12"  flag="L"  line="578"  />
+            
+            <transition fromid="6"  toid="0"  flag="L"  line="1093"  />
+            <transition fromid="6"  toid="3"  flag="L"  line="592"  />
+            <transition fromid="6"  toid="4"  flag="L"  line="548"  />
+            <transition fromid="6"  toid="5"  flag="L"  line="621"  />
+            <transition fromid="6"  toid="8"  flag="L"  line="544"  />
+            <transition fromid="6"  toid="9"  flag="L"  line="591"  />
+            <transition fromid="6"  toid="11"  flag="L"  line="586"  />
+            <transition fromid="6"  toid="12"  flag="L"  line="578"  />
+            
+            <transition fromid="7"  toid="0"  flag="L"  line="1093"  />
+            <transition fromid="7"  toid="3"  flag="L"  line="592"  />
+            <transition fromid="7"  toid="4"  flag="L"  line="486"  />
+            <transition fromid="7"  toid="5"  flag="L"  line="621"  />
+            <transition fromid="7"  toid="6"  flag="L"  line="478"  />
+            <transition fromid="7"  toid="8"  flag="L"  line="469"  />
+            <transition fromid="7"  toid="9"  flag="L"  line="591"  />
+            <transition fromid="7"  toid="11"  flag="L"  line="586"  />
+            <transition fromid="7"  toid="12"  flag="L"  line="578"  />
+            
+            <transition fromid="8"  toid="0"  flag="L"  line="1093"  />
+            <transition fromid="8"  toid="3"  flag="L"  line="592"  />
+            <transition fromid="8"  toid="5"  flag="L"  line="621"  />
+            <transition fromid="8"  toid="7"  flag="L"  line="456"  />
+            <transition fromid="8"  toid="9"  flag="L"  line="591"  />
+            <transition fromid="8"  toid="11"  flag="L"  line="586"  />
+            <transition fromid="8"  toid="12"  flag="L"  line="578"  />
+            
+            <transition fromid="9"  toid="0"  flag="L"  line="1093"  />
+            <transition fromid="9"  toid="2"  flag="L"  line="424"  />
+            <transition fromid="9"  toid="3"  flag="L"  line="592"  />
+            <transition fromid="9"  toid="5"  flag="L"  line="621"  />
+            <transition fromid="9"  toid="11"  flag="L"  line="586"  />
+            <transition fromid="9"  toid="12"  flag="L"  line="578"  />
+            
+            <transition fromid="10"  toid="0"  flag="L"  line="1093"  />
+            <transition fromid="10"  toid="3"  flag="L"  line="592"  />
+            <transition fromid="10"  toid="5"  flag="L"  line="621"  />
+            <transition fromid="10"  toid="9"  flag="L"  line="591"  />
+            <transition fromid="10"  toid="11"  flag="L"  line="586"  />
+            <transition fromid="10"  toid="12"  flag="L"  line="343"  />
+            
+            <transition fromid="11"  toid="0"  flag="L"  line="1093"  />
+            <transition fromid="11"  toid="3"  flag="L"  line="592"  />
+            <transition fromid="11"  toid="5"  flag="L"  line="621"  />
+            <transition fromid="11"  toid="9"  flag="L"  line="591"  />
+            <transition fromid="11"  toid="12"  flag="L"  line="578"  />
+            
+            <transition fromid="12"  toid="0"  flag="L"  line="1093"  />
+            <transition fromid="12"  toid="3"  flag="L"  line="592"  />
+            <transition fromid="12"  toid="5"  flag="L"  line="621"  />
+            <transition fromid="12"  toid="9"  flag="L"  line="591"  />
+            <transition fromid="12"  toid="10"  flag="L"  line="330"  />
+            <transition fromid="12"  toid="11"  flag="L"  line="586"  />
+            
+            <transition fromid="13"  toid="0"  flag="L"  line="1093"  />
+            <transition fromid="13"  toid="2"  flag="L"  line="434"  />
+            <transition fromid="13"  toid="3"  flag="L"  line="592"  />
+            <transition fromid="13"  toid="5"  flag="L"  line="621"  />
+            <transition fromid="13"  toid="9"  flag="L"  line="591"  />
+            <transition fromid="13"  toid="11"  flag="L"  line="586"  />
+            <transition fromid="13"  toid="12"  flag="L"  line="578"  />
+            
+          </fsmfsm>
+        </fsmshape>
+        <fsminst name="gon_axi2apb_tb.dut.U_APB_MASTER.U_x2ps_ctrl"  />
+      </fsmdef>
+          <metric_sig chksum="65346B85311F2B356F944DB142EE5F5060E09C14"  />
+    </fsm>

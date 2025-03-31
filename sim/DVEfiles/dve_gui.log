@@ -1,0 +1,177 @@
+
+Warning-[RT_SMLWITHGUI] Smartlog with -gui
+  The '-sml' flag is ignored; Smartlog is always enabled with '-gui'.
+  The Smartlog is stored at DVEfiles/dve_gui.log.
+
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Mar 30 23:33 2025
+UVM_INFO /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+VCD+ Writer O-2018.09-1_Full64 Copyright (c) 1991-2018 by Synopsys Inc.
+The design has assertions or cover properties.
+The assertion browser can be used to view them. Click on the assertion toolbar button or use the menu 'Window->Panes->Assertion' to open it.
+The file '/home/ICer/ic_prjs/AXI2APB/sim/inter.vpd' was opened successfully.
+GUI mode
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 00 ps
+CPU Time:      1.380 seconds;       Data structure size:   8.6Mb
+Sun Mar 30 23:33:55 2025
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Mar 30 23:33 2025
+UVM_INFO /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+VCD+ Writer O-2018.09-1_Full64 Copyright (c) 1991-2018 by Synopsys Inc.
+The design has assertions or cover properties.
+The assertion browser can be used to view them. Click on the assertion toolbar button or use the menu 'Window->Panes->Assertion' to open it.
+The file '/home/ICer/ic_prjs/AXI2APB/sim/inter.vpd' was opened successfully.
+Warning: [DVAP008] 
+The source file '/opt/synopsys/vcs/vcs-mx/O-2018.09-SP2/etc/uvm-1.2/base/uvm_root.svh' cannot be found.
+Error: [DVAP037] 
+Errors while sourcing the file '/home/ICer/ic_prjs/AXI2APB/sim/gon_axi2apb_debug_wave.tcl':
+
+ Line 405: .
+dve> run
+Information: *** Instance gon_axi2apb_tb.dut.U_WR_DATA_BUFF.U_WRITE_FIFO_CONTROL_S2 module is using the <Dual Clock FIFO Controller (11)> Clock Domain Crossing Method ***
+Information: *** Instance gon_axi2apb_tb.dut.U_RESP_BUFF.U_RESP_FIFO_CONTROL_S2 module is using the <Dual Clock FIFO Controller (11)> Clock Domain Crossing Method ***
+Information: *** Instance gon_axi2apb_tb.dut.U_RD_DATA_BUFF.U_READ_FIFO_CONTROL_S2 module is using the <Dual Clock FIFO Controller (11)> Clock Domain Crossing Method ***
+Information: *** Instance gon_axi2apb_tb.dut.U_CMD_QUEUE.U_CMD_FIFO_CONTROL_S2 module is using the <Dual Clock FIFO Controller (11)> Clock Domain Crossing Method ***
+UVM_INFO @ 0: reporter [RNTST] Running test gon_axi2apb_smoke_test...
+UVM_INFO /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_phase.svh(1797) @ 0: reporter [PH/TRC/WAIT_PRED_OF_SUCC] Phase 'common.build' (id=195) *** No pred to succ other than myself, so ending phase ***
+UVM_INFO /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_phase.svh(1797) @ 0: reporter [PH/TRC/WAIT_PRED_OF_SUCC] Phase 'common.connect' (id=198) *** No pred to succ other than myself, so ending phase ***
+UVM_INFO /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_phase.svh(1797) @ 0: reporter [PH/TRC/WAIT_PRED_OF_SUCC] Phase 'common.end_of_elaboration' (id=201) *** No pred to succ other than myself, so ending phase ***
+UVM_INFO /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_phase.svh(1797) @ 0: reporter [PH/TRC/WAIT_PRED_OF_SUCC] Phase 'common.start_of_simulation' (id=204) *** No pred to succ other than myself, so ending phase ***
+UVM_INFO ../vip_lib/gon_apb/./gon_apb_slave_driver.sv(98) @ 0: uvm_test_top.env.apb_slv.driver [gon_apb_slave_driver] reset_listener ...
+UVM_INFO ../vip_lib/gon_axi/././gon_axi_master/gon_axi_master_driver.sv(178) @ 0: uvm_test_top.env.axi_mst.driver [gon_axi_master_driver] reset_listener ...
+UVM_INFO ../seq_lib/gon_axi2apb_smoke_virt_seq.sv(20) @ 0: uvm_test_top.env.virt_sqr@@seq [body] Entered...
+UVM_INFO ../seq_lib/elem_seqs/gon_axi2apb_clk_reset_set_seq.sv(25) @ 0: uvm_test_top.env.virt_sqr@@seq.clk_reset_set [body] Entered...
+UVM_INFO ../vip_lib/gon_clk_reset/././sequence_lib/gon_clk_reset_seq.sv(23) @ 0: uvm_test_top.env.axi_clk_reset.sequencer@@seq.clk_reset_set.axi_clk_reset_seq [body] Entered...
+UVM_INFO ../vip_lib/gon_clk_reset/././sequence_lib/gon_clk_reset_seq.sv(23) @ 0: uvm_test_top.env.apb_clk_reset.sequencer@@seq.clk_reset_set.apb_clk_reset_seq [body] Entered...
+UVM_INFO ../vip_lib/gon_clk_reset/./gon_clk_reset_driver.sv(34) @ 0: uvm_test_top.env.axi_clk_reset.driver [gon_clk_reset_driver] sequencer get next item
+UVM_INFO ../vip_lib/gon_clk_reset/./gon_clk_reset_driver.sv(37) @ 0: uvm_test_top.env.axi_clk_reset.driver [gon_clk_reset_driver] sequencer item_done_triggered
+UVM_INFO ../vip_lib/gon_clk_reset/./gon_clk_reset_driver.sv(34) @ 0: uvm_test_top.env.apb_clk_reset.driver [gon_clk_reset_driver] sequencer get next item
+UVM_INFO ../vip_lib/gon_clk_reset/./gon_clk_reset_driver.sv(37) @ 0: uvm_test_top.env.apb_clk_reset.driver [gon_clk_reset_driver] sequencer item_done_triggered
+UVM_INFO ../vip_lib/gon_clk_reset/././sequence_lib/gon_clk_reset_seq.sv(30) @ 0: uvm_test_top.env.axi_clk_reset.sequencer@@seq.clk_reset_set.axi_clk_reset_seq [body] Exited...
+UVM_INFO ../vip_lib/gon_clk_reset/././sequence_lib/gon_clk_reset_seq.sv(30) @ 0: uvm_test_top.env.apb_clk_reset.sequencer@@seq.clk_reset_set.apb_clk_reset_seq [body] Exited...
+UVM_INFO ../seq_lib/elem_seqs/gon_axi2apb_clk_reset_set_seq.sv(38) @ 0: uvm_test_top.env.virt_sqr@@seq.clk_reset_set [body] Exiting...
+UVM_INFO ../seq_lib/elem_seqs/gon_axi2apb_write_seq.sv(33) @ 0: uvm_test_top.env.virt_sqr@@seq.burst_write [gon_axi2apb_write_seq] Starting sequence
+UVM_INFO ../vip_lib/gon_apb/sequence_lib/gon_apb_slave_ready.sv(28) @ 0: uvm_test_top.env.apb_slv.sequencer@@seq.burst_write.slave_ready_seq [gon_apb_slave_ready] Starting sequence
+UVM_INFO ../vip_lib/gon_axi/sequence_lib/gon_axi_transfer_seq.sv(35) @ 0: uvm_test_top.env.axi_mst.sequencer@@seq.burst_write.axi_transfer_seq [gon_axi_transfer_seq] Starting sequence
+UVM_INFO ../vip_lib/gon_apb/./gon_apb_driver.sv(33) @ 0: uvm_test_top.env.apb_slv.driver [gon_apb_slave_driver] sequencer get next item
+UVM_INFO ../vip_lib/gon_axi/././gon_axi_master/gon_axi_master_driver.sv(174) @ 5000: uvm_test_top.env.axi_mst.driver [gon_axi_master_driver] reset is finished
+UVM_INFO ../vip_lib/gon_axi/././gon_axi_master/gon_axi_master_driver.sv(36) @ 5000: uvm_test_top.env.axi_mst.driver [gon_axi_master_driver] sequencer get next item
+UVM_INFO ../vip_lib/gon_apb/./gon_apb_driver.sv(40) @ 18500: uvm_test_top.env.apb_slv.driver [gon_apb_slave_driver] sequencer item_done_triggered
+UVM_INFO ../vip_lib/gon_apb/sequence_lib/gon_apb_slave_ready.sv(37) @ 18500: uvm_test_top.env.apb_slv.sequencer@@seq.burst_write.slave_ready_seq [gon_apb_slave_ready] Done sequence:  
+UVM_INFO ../env/gon_axi2apb_scb.sv(86) @ 19500: uvm_test_top.env.scb [DATACHK] axi write data 'h1010101 = apb write data 'h1010101
+UVM_INFO ../env/gon_axi2apb_scb.sv(105) @ 19500: uvm_test_top.env.scb [ADRRCHK] axi write address 'h5e0 = apb write address 'h5e0
+UVM_INFO ../vip_lib/gon_axi/././gon_axi_master/gon_axi_master_driver.sv(42) @ 25500: uvm_test_top.env.axi_mst.driver [gon_axi_master_driver] sequencer item_done_triggered
+UVM_INFO ../vip_lib/gon_axi/sequence_lib/gon_axi_transfer_seq.sv(47) @ 25500: uvm_test_top.env.axi_mst.sequencer@@seq.burst_write.axi_transfer_seq [gon_axi_transfer_seq] Done sequence:  
+UVM_INFO ../seq_lib/elem_seqs/gon_axi2apb_write_seq.sv(61) @ 25500: uvm_test_top.env.virt_sqr@@seq.burst_write [gon_axi2apb_write_seq] Done sequence
+UVM_INFO ../seq_lib/elem_seqs/gon_axi2apb_read_seq.sv(33) @ 25500: uvm_test_top.env.virt_sqr@@seq.burst_read [gon_axi2apb_read_seq] Starting sequence
+UVM_INFO ../vip_lib/gon_apb/sequence_lib/gon_apb_slave_ready.sv(28) @ 25500: uvm_test_top.env.apb_slv.sequencer@@seq.burst_read.slave_ready_seq [gon_apb_slave_ready] Starting sequence
+UVM_INFO ../vip_lib/gon_axi/sequence_lib/gon_axi_transfer_seq.sv(35) @ 25500: uvm_test_top.env.axi_mst.sequencer@@seq.burst_read.axi_transfer_seq [gon_axi_transfer_seq] Starting sequence
+UVM_INFO ../vip_lib/gon_apb/./gon_apb_driver.sv(33) @ 25500: uvm_test_top.env.apb_slv.driver [gon_apb_slave_driver] sequencer get next item
+UVM_INFO ../vip_lib/gon_axi/././gon_axi_master/gon_axi_master_driver.sv(36) @ 25500: uvm_test_top.env.axi_mst.driver [gon_axi_master_driver] sequencer get next item
+UVM_INFO ../vip_lib/gon_apb/./gon_apb_driver.sv(40) @ 34500: uvm_test_top.env.apb_slv.driver [gon_apb_slave_driver] sequencer item_done_triggered
+UVM_INFO ../vip_lib/gon_apb/sequence_lib/gon_apb_slave_ready.sv(37) @ 34500: uvm_test_top.env.apb_slv.sequencer@@seq.burst_read.slave_ready_seq [gon_apb_slave_ready] Done sequence:  
+UVM_INFO ../vip_lib/gon_axi/././gon_axi_master/gon_axi_master_driver.sv(42) @ 40500: uvm_test_top.env.axi_mst.driver [gon_axi_master_driver] sequencer item_done_triggered
+UVM_INFO ../vip_lib/gon_axi/sequence_lib/gon_axi_transfer_seq.sv(47) @ 40500: uvm_test_top.env.axi_mst.sequencer@@seq.burst_read.axi_transfer_seq [gon_axi_transfer_seq] Done sequence:  
+UVM_INFO ../env/gon_axi2apb_scb.sv(127) @ 40500: uvm_test_top.env.scb [DATACHK] axi write data 'h1010101 = apb write data 'h1010101
+UVM_INFO ../env/gon_axi2apb_scb.sv(146) @ 40500: uvm_test_top.env.scb [ADRRCHK] axi write address 'h5e0 = apb write address 'h5e0
+UVM_INFO ../seq_lib/elem_seqs/gon_axi2apb_read_seq.sv(61) @ 40500: uvm_test_top.env.virt_sqr@@seq.burst_read [gon_axi2apb_read_seq] Done sequence
+UVM_INFO ../seq_lib/gon_axi2apb_base_virt_seq.sv(23) @ 40500: uvm_test_top.env.virt_sqr@@seq [DATACOMP] write and read data compare begin
+UVM_INFO ../seq_lib/gon_axi2apb_base_virt_seq.sv(28) @ 40500: uvm_test_top.env.virt_sqr@@seq [DATACOMP_SUCCESS] wr_data[0] 01010101 == rd_data[0] 1010101
+UVM_INFO ../seq_lib/gon_axi2apb_base_virt_seq.sv(30) @ 40500: uvm_test_top.env.virt_sqr@@seq [DATACOMP] write and read data compare end
+UVM_INFO ../seq_lib/gon_axi2apb_smoke_virt_seq.sv(49) @ 45500: uvm_test_top.env.virt_sqr@@seq [body] Exited...
+UVM_INFO /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 45500: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_phase.svh(1797) @ 45500: reporter [PH/TRC/WAIT_PRED_OF_SUCC] Phase 'common.extract' (id=216) *** No pred to succ other than myself, so ending phase ***
+UVM_INFO /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_phase.svh(1797) @ 45500: reporter [PH/TRC/WAIT_PRED_OF_SUCC] Phase 'common.check' (id=219) *** No pred to succ other than myself, so ending phase ***
+UVM_INFO /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_phase.svh(1797) @ 45500: reporter [PH/TRC/WAIT_PRED_OF_SUCC] Phase 'common.report' (id=222) *** No pred to succ other than myself, so ending phase ***
+UVM_INFO /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_phase.svh(1797) @ 45500: reporter [PH/TRC/WAIT_PRED_OF_SUCC] Phase 'common.final' (id=225) *** No pred to succ other than myself, so ending phase ***
+UVM_INFO /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 45500: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_report_server.svh(894) @ 45500: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   54
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[ADRRCHK]     2
+[DATACHK]     2
+[DATACOMP]     2
+[DATACOMP_SUCCESS]     1
+[PH/TRC/WAIT_PRED_OF_SUCC]     8
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[body]     8
+[gon_apb_slave_driver]     5
+[gon_apb_slave_ready]     4
+[gon_axi2apb_read_seq]     2
+[gon_axi2apb_write_seq]     2
+[gon_axi_master_driver]     6
+[gon_axi_transfer_seq]     4
+[gon_clk_reset_driver]     4
+
+$finish called from file "/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time                45500
+Simulation complete, time is 455000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 455000 ps
+CPU Time:      2.010 seconds;       Data structure size:   8.8Mb
+Sun Mar 30 23:34:32 2025
+Updating preference file: /home/ICer/.synopsys_dve_prefs.tcl
