@@ -28,6 +28,7 @@ class gon_clk_reset_agent extends uvm_agent;
     super.connect_phase(phase);
     driver.seq_item_port.connect(sequencer.seq_item_export);
     driver.vif = vif;
+    sequencer.vif = vif;
   endfunction
 
   task run_phase(uvm_phase phase);

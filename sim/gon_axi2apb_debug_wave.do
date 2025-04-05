@@ -1,6 +1,6 @@
 # Begin_DVE_Session_Save_Info
 # DVE view(Wave.1 ) session
-# Saved on Sat Apr 5 11:16:41 2025
+# Saved on Sat Apr 5 11:14:57 2025
 # Toplevel windows open: 2
 # 	TopLevel.1
 # 	TopLevel.2
@@ -11,7 +11,7 @@
 # DVE build date: Oct 12 2018 21:19:11
 
 
-#<Session mode="View" path="/home/ICer/ic_prjs/AXI2APB/sim/gon_axi2apb_debug_wave.tcl" type="Debug">
+#<Session mode="View" path="/home/ICer/ic_prjs/AXI2APB/sim/gon_axi2apb_debug_wave.do" type="Debug">
 
 #<Database>
 
@@ -22,7 +22,7 @@ gui_set_time_units 10ps
 
 # Begin_DVE_Session_Save_Info (Wave.1)
 # DVE wave signals session
-# Saved on Sat Apr 5 11:16:41 2025
+# Saved on Sat Apr 5 11:14:57 2025
 # 59 signals
 # End_DVE_Session_Save_Info
 
@@ -102,7 +102,7 @@ gui_list_set_height -id Wave -height 25
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
 gui_marker_set_ref -id ${Wave.1}  C1
-gui_wv_zoom_timerange -id ${Wave.1} 0 54500
+gui_wv_zoom_timerange -id ${Wave.1} 40408 68585
 gui_list_add_group -id ${Wave.1} -after {New Group} [list ${Group1}]
 gui_list_add_group -id ${Wave.1} -after {New Group} [list ${Group2}]
 gui_list_add_group -id ${Wave.1} -after {New Group} [list ${Group3}]
@@ -125,7 +125,7 @@ gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linka
 gui_list_set_filter -id ${Wave.1} -text {*}
 gui_list_set_insertion_bar  -id ${Wave.1} -group ${Group1}  -item {gon_axi2apb_tb.dut.awlen[3:0]} -position below
 
-gui_marker_move -id ${Wave.1} {C1} 43209
+gui_marker_move -id ${Wave.1} {C1} 54500
 gui_view_scroll -id ${Wave.1} -vertical -set 0
 gui_show_grid -id ${Wave.1} -enable false
 #</Session>

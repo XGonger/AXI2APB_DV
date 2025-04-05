@@ -47,7 +47,7 @@ class gon_axi_transfer_seq extends gon_axi_base_seq;
     `uvm_info(get_type_name(), $psprintf("Done sequence:  %s", req.convert2string()), UVM_HIGH)
 
     get_response(rsp);
-    if(wr_rd == READ) begin
+    if(wr_rd == READ && rsp.trans_of_reset == 0) begin
       data = new[rsp.data.size()];
       foreach(data[i]) data[i] = rsp.data[i];
       resp = new[data.size()];

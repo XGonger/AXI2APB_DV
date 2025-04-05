@@ -4,4 +4,5 @@ if {[info command guiIsActive]==""} {
 } else {
   echo "GUI mode"
   dump -add / -depth 0
+  do gon_axi2apb_debug_wave.do
 }

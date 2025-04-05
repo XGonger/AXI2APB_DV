@@ -21,10 +21,10 @@ class gon_apb_driver #(type REQ = gon_apb_transaction, type RSP = REQ) extends u
 
   task run_phase(uvm_phase phase);
     super.run_phase(phase);
-    fork
-      get_and_dirve();
-      reset_listener();
-    join_none
+    // fork
+    //   get_and_dirve();
+    //   reset_listener();
+    // join_none
   endtask
 
   virtual task get_and_dirve();

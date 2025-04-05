@@ -38,6 +38,7 @@ class gon_axi_master_agent extends uvm_agent;
     if(cfg.is_active) begin
       driver.seq_item_port.connect(sequencer.seq_item_export);
       driver.vif = vif;
+      sequencer.vif = vif;
     end
   endfunction
 

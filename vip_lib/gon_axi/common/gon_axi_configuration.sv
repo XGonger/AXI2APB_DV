@@ -2,6 +2,7 @@
 `define GON_AXI_CONFIGURATION_SV
 
 class base_config extends uvm_object;
+
   `uvm_object_utils(base_config)
 
   function new(string name = "base_conf");
@@ -10,7 +11,8 @@ class base_config extends uvm_object;
 endclass
 
 class gon_axi_configuration extends uvm_object;
-    
+
+  bit reset_state_check = 0;
   bit is_active = 1'b1;
   
   `uvm_object_utils(gon_axi_configuration)

@@ -25,8 +25,8 @@ class gon_axi2apb_env extends uvm_env;
     if(!uvm_config_db#(gon_axi2apb_config)::get(this, "" , "cfg", cfg))
       `uvm_fatal("GETCFG", "cannot get config object from config db")
 
-    uvm_config_db#(gon_axi_configuration)::set(this, "axi_mst", "cfg", cfg.axi_config);
-    uvm_config_db#(gon_apb_agent_configuration)::set(this, "apb_slv", "cfg", cfg.apb_config);
+    uvm_config_db#(gon_axi_configuration)::set(this, "axi_mst*", "cfg", cfg.axi_config);
+    uvm_config_db#(gon_apb_agent_configuration)::set(this, "apb_slv*", "cfg", cfg.apb_config);
 
     axi_mst = gon_axi_master_agent::type_id::create("axi_mst", this);
     apb_slv = gon_apb_slave_agent::type_id::create("apb_slv", this);

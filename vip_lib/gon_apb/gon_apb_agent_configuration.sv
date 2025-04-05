@@ -3,7 +3,7 @@
 
 
 class gon_apb_agent_configuration extends uvm_object;
-
+  bit reset_state_check = 0;
   bit is_active = 1;
 
   `uvm_object_utils_begin(gon_apb_agent_configuration)

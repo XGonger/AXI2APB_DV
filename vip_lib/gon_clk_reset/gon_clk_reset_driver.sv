@@ -52,17 +52,18 @@ class gon_clk_reset_driver extends uvm_driver #(gon_clk_reset_transaction);
       end
 
       begin
-        forever begin
-          #(t.period/2);
-          vif.clk = ~vif.clk;
+        if(t.power_on) begin
+          forever begin
+            #(t.period/2);
+            vif.clk = ~vif.clk;
+          end
         end
       end
 
       begin
         if(t.rst_cycle > 0) begin
           vif.reset_ = 1'b0;
-          #(t.period*t.rst_cycle);
-          @(posedge vif.clk);
+          repeat(t.rst_cycle) @(posedge vif.clk);
           vif.reset_ = 1'b1;
         end
       end

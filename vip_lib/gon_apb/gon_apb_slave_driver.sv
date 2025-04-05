@@ -3,6 +3,7 @@
 
 class gon_apb_slave_driver extends gon_apb_driver;
 
+  bit reset_state_flag = 0;
   bit [31:0] mem[bit [15:0]];
 
   `uvm_component_utils(gon_apb_slave_driver)
@@ -21,17 +22,49 @@ class gon_apb_slave_driver extends gon_apb_driver;
 
   task run_phase(uvm_phase phase);
     super.run_phase(phase);
+    fork
+      get_and_dirve();
+      reset_listener();
+    join_none
+  endtask
+
+  virtual task get_and_dirve();
+    forever begin
+      seq_item_port.get_next_item(req);
+      `uvm_info(get_type_name(), "sequencer get next item", UVM_HIGH)
+      if(reset_state_flag == 0)
+        drive_transfer(req);
+      void'($cast(rsp, req.clone()));
+      rsp.set_sequence_id(req.get_sequence_id());
+      rsp.set_transaction_id(req.get_transaction_id());
+      // no rsp transfer now
+      seq_item_port.item_done();
+      `uvm_info(get_type_name(), "sequencer item_done_triggered", UVM_HIGH)
+    end
   endtask
 
   virtual task drive_transfer(REQ t);
-    vif.cb_slv.pready <= t.pready;
-    vif.cb_slv.pslverr <= t.pslverr;
-    @(vif.cb_slv iff (vif.cb_slv.psel == 1'b1 && vif.cb_slv.penable == 1'b0));
-    wait_ready_on(t.nready_num);
-    case(vif.cb_slv.pwrite)
-      1'b1 : store_data_with_addr(t);
-      1'b0 : get_data_with_addr(t);
-    endcase
+    fork
+      begin
+        vif.cb_slv.pready <= t.pready;
+        vif.cb_slv.pslverr <= t.pslverr;
+        @(vif.cb_slv);
+        while(1) begin
+          if(vif.cb_slv.psel == 1'b1 && vif.cb_slv.penable == 1'b0)
+            break;
+          @(vif.cb_slv);
+        end
+        wait_ready_on(t.nready_num);
+        case(vif.cb_slv.pwrite)
+          1'b1 : store_data_with_addr(t);
+          1'b0 : get_data_with_addr(t);
+        endcase
+      end
+      begin
+        @(vif.cb_slv iff (reset_state_flag == 1));
+        disable fork;
+      end
+    join_any
   endtask
 
   virtual task store_data_with_addr(REQ t);
@@ -99,7 +132,11 @@ class gon_apb_slave_driver extends gon_apb_driver;
     fork
       forever begin
         @(negedge vif.presetn);
+        reset_state_flag = 1;
+        @(vif.cb_slv);
         _do_drive_idle();
+        @(posedge vif.presetn);
+        reset_state_flag = 0;
       end
     join_none
   endtask

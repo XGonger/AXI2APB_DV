@@ -124,9 +124,9 @@ class gon_axi2apb_scb extends gon_axi2apb_subscriber;
         apb_t = apb_read_trans_q.pop_front();
         //-------------------------------- data compare begin ----------------------
         if(axi_t.data[i] == apb_t.data)
-          `uvm_info("DATACHK", $sformatf("axi write data 'h%0x = apb write data 'h%0x", axi_t.data[i], apb_t.data), UVM_HIGH)
+          `uvm_info("DATACHK", $sformatf("axi read data 'h%0x = apb read data 'h%0x", axi_t.data[i], apb_t.data), UVM_HIGH)
         else
-          `uvm_error("DATACHK", $sformatf("axi write data 'h%0x != apb write data 'h%0x", axi_t.data[i], apb_t.data))
+          `uvm_error("DATACHK", $sformatf("axi read data 'h%0x != apb read data 'h%0x", axi_t.data[i], apb_t.data))
         //-------------------------------- data compare end ----------------------
         
         //-------------------------------- address compare begin ----------------------

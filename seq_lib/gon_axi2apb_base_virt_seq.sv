@@ -7,6 +7,8 @@ class gon_axi2apb_base_virt_seq extends uvm_sequence;
   gon_axi2apb_write_seq burst_write;
   gon_axi2apb_read_seq burst_read;
 
+  `uvm_declare_p_sequencer(gon_axi2apb_virt_sqr)
+
   `uvm_object_utils(gon_axi2apb_base_virt_seq)
 
   function new(string name = "gon_axi2apb_base_virt_seq");

@@ -10,9 +10,9 @@ class gon_axi2apb_base_elem_seq extends uvm_sequence;
 
   gon_axi_transfer_seq axi_transfer_seq;
 
-  `uvm_object_utils(gon_axi2apb_base_elem_seq)
-
   `uvm_declare_p_sequencer(gon_axi2apb_virt_sqr)
+
+  `uvm_object_utils(gon_axi2apb_base_elem_seq)
 
   function new(string name = "gon_axi2apb_base_elem_seq");
     super.new(name);

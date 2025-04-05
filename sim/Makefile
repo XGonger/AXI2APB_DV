@@ -5,10 +5,10 @@ TB       	= gon_axi2apb_tb
 SEED     	= 1
 GUI      ?= 0
 COV      ?= 0
-DOTCL    ?= 1
+LOADWAVE ?= 1
 VERB     ?= UVM_HIGH
 OUT      ?= out
-TESTNAME ?= gon_axi2apb_smoke_test
+TESTNAME ?= gon_axi2apb_busy_reset_state_check_test
 FILELIST = ../tb/filelist/gon_axi2apb.f
 
 
@@ -28,7 +28,7 @@ SIMRUNFILE 	= gon_axi2apb_sim_run.do
 ifeq ($(GUI),1)
 RUN += -gui
 endif
-ifeq ($(DOTCL),1)
+ifeq ($(LOADWAVE),1)
 RUN += -ucli -do $(SIMRUNFILE)
 endif
 ifeq ($(COV),1)

@@ -3,5 +3,7 @@
 
 `include "gon_axi2apb_base_test.sv"
 `include "gon_axi2apb_smoke_test.sv"
+`include "gon_axi2apb_free_reset_state_check_test.sv"
+`include "gon_axi2apb_busy_reset_state_check_test.sv"
 
 `endif
